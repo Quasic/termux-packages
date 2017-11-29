@@ -6,5 +6,6 @@ TERMUX_PKG_SRCURL=https://github.com/soimort/translate-shell/archive/v${TERMUX_P
 TERMUX_PKG_MAINTAINER="@Quasic"
 TERMUX_PKG_DEPENDS="bash, gawk"
 # can use zsh instead of bash, other dependencies are optional
-#TERMUX_PKG_PLATFORM_INDEPENDENT=yes
+TERMUX_PKG_PLATFORM_INDEPENDENT=yes
 TERMUX_DEBUG=1
+echo $TERMUX_DEBUG $TERMUX_PKG_VERSION $TERMUX_PKG_DESCRIPTION
