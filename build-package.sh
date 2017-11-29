@@ -360,6 +360,8 @@ termux_step_handle_buildarch() {
 termux_step_start_build() {
 	# shellcheck source=/dev/null
 	source "$TERMUX_PKG_BUILDER_SCRIPT"
+	
+	echo $TERMUX_PKG_VERSION $TERMUX_PKG_DESCRIPTION $TERMUX_DEBUG
 
 	TERMUX_STANDALONE_TOOLCHAIN="$TERMUX_TOPDIR/_lib/${TERMUX_NDK_VERSION}-${TERMUX_ARCH}-${TERMUX_PKG_API_LEVEL}"
 	# Bump the below version if a change is made in toolchain setup to ensure
